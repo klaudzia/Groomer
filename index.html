@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Groomer Dogi-Dogi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova|Inria+Serif|Oswald:500&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="background">
+            <nav>
+                <ul class="clearfix">
+                    <li><a href="#section1">o nas</a></li>
+                    <li><a href="#section2">galeria</a></li>
+                    <li><a href="#section3">oferta</a></li>
+                    <li><a href="#section4">opinie</a></li>
+                </ul>
+            </nav>
+            <div class="contents">
+                <h1>dogi-dogi najlepszy groomer!</h1>
+                <p class="content">Dogi- Dogi to najlepsze miejsce dla twojego pupila. Zajmujemy sie strzyżeniem psów,
+                    kąpielą oraz czesaniem. Posiadamy bardzo dużo zadowolonych klientów. Zaprszamy więc i twojego pupila
+                    aby przekonał się, że strzyżenie nie jest złe!</p>
+            </div>
+            <div class="buttons">
+                <button class="button1"><a href="#section5">umów się na wizytę</a></button>
+                <button class="button2"><a href="#section5">zadzwoń do nas</a></button>
+            </div>
+        </div>
+    </header>
+    <!-- https://material.io/resources/icons/?style=baseline -->
+    <button id="btnscroll">
+        <i class="material-icons">arrow_upward</i>
+    </button>
+    <section class="about clearfix">
+        <div id="section1">
+            <h2>o nas</h2>
+            <p class="text">Strzyżenie psów staję się coraz popularniejsze w całym kraju. Jednak bardzo ważnym aspektem
+                jest aby psiak trafił w odpowiednie miejsce. W naszym salonie Dogi Dogi psi fryzjer , Państwa psem
+                zajmie się profesjonalny groomer.
+                Korzystamy z profesjonalnego sprzętu groomerskiego oraz używamy tylko i wyłącznie odpowiednich
+                kosmetyków do pielęgnacji psiej sierści.
+
+                <br>Świadczymy usługi z zakresu: kąpiel, strzyżenie oraz trymowanie, pielęgnacja oczu, czesanie,
+                obcinanie pazurów. Salon Dogi-Dogi w szczególności dba aby Państwa piesek został ścięty w czystych oraz
+                sterylnych warunkach.<br></p>
+
+        </div>
+    </section>
+    <section class="gallery clearfix">
+        <div id="section2">
+            <h3>Galeria</h3>
+            <div class="item">
+                <p>Franio mopsik</p>
+            </div>
+            <div class="item">
+                <p>Frunia york</p>
+            </div>
+            <div class="item">
+                <p>Olaf mopsik</p>
+            </div>
+            <div class="item">
+                <p>Kalvin psinka</p>
+            </div>
+            <div class="item">
+                <p>Max szczeniak</p>
+            </div>
+            <div class="item">
+                <p>Loko szczeniak</p>
+            </div>
+            <span id="dots"></span>
+            <span id="more">
+
+                <div class="item">
+                    <p>Mia kundelek</p>
+                </div>
+                <div class="item">
+                    <p>Rain psinka</p>
+                </div>
+                <div class="item">
+                    <p>Olaf szczeniak</p>
+                </div>
+
+            </span>
+            <button class="see" onclick="myFunction()" id="myBtn">zobacz wiecej</button>
+        </div>
+    </section>
+    <section class="offerts">
+        <div id="section3">
+            <div class="offer">
+                <h4>oferta</h4>
+                <p>wybierz rasę psa:</p>
+                <div class="select1">
+                    <select name="btn1" id="btn1" onchange="return conf();">
+                        <option value="0">Wybierz</option>
+                        <option value="20" name="york">York</option>
+                        <option value="30" name="2">Shitsu</option>
+                        <option value="40" name="3">Maltańczyk</option>
+                        <option value="50" name="4">Cocker Spaniel</option>
+                        <option value="40" name="5">Kundel do 30cm</option>
+                        <option value="70" name="6">Kundel do 60cm</option>
+                        <option value="20" name="7">Kot</option>
+                    </select>
+
+                </div>
+                <p>wybierz dodatkowe opcje:</p>
+                <div class="select2">
+                    <select name="btn2" id="btn2" onchange="return conf();">
+                        <option value="0">Wybierz</option>
+                        <option value="1.80" name="8">Strzyżenie z kąpielą</option>
+                        <option value="1.50" name="9">Strzyżenie bez kąpieli</option>
+                        <option value="1.30" name="11">Czesanie</option>
+                    </select>
+                </div>
+                <h5>cena końcowa:<div id="price"></div>
+                </h5>
+
+            </div>
+        </div>
+    </section>
+    <section class="opinions clearfix">
+        <div id="section4">
+            <h6>Opinie naszych klientów</h6>
+            <div class="opinion">
+                <img src="img/ang2.jpg" alt="zdjecie klienta">
+                <p class="description">Pani Klodi ma niesamowite podejście do każdego psa, a wiem co mówię, ponieważ
+                    mój pies jest wyjątkowo ciężki w kontaktach z ludźmi. Jednak nie boi się przychodzić do naszej
+                    ulubionej fryzjerki! Zawsze wychodzimy stamtąd zadowoleni, a mój piesek pachnący i pięknie
+                    ostrzyzony!</p>
+                <p>Angelika Piasecka </p>
+            </div>
+            <div class="opinion">
+                <img src="img/misia.jpg" alt="zdjecie klienta">
+                <p class="description">Mój pies zawsze boi się iść do fryzjera żeby go zaciągnąć to nielada wyzwanie.
+                    Idą pierwszy raz do DOGI-DOGI mialam pewne obawy co do zachowania psa ale się myliłam! Super
+                    obsługa oraz podejście do zwierząt. Mój piesek jest szczęśliwy oraz perfekcyjnie ścięty! To była
+                    nasza pierwsza wizyta i na pewno nie ostatnia! </p>
+                <p>Martyna Klebba</p>
+            </div>
+            <div class="opinion">
+                <img src="img/klaudia.jpg" alt="zdjecie klienta">
+                <p class="description">Jestem bardzo zadowolona z wizyty w salonie dogi-dogi. Salon bardzo czysty
+                    zadbany a
+                    do tego bardzo przyjazny dla zwierząt. Mój piesek został bardzo dobrze ostrzyżony z taką fryzurką
+                    jaką
+                    chciałam.
+                    Pani groomerka bardzo miła i uprzejma. Na 100% wróce do tego salonu!
+                </p>
+                <p>Klaudia Klebba</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div id="section5">
+            <h7>Skontaktuj sie ze mną</h7>
+            <div class="wrap clearfix">
+                <div class="socials">
+                    <div class="social clearfix"><img src="img/contact1.png" alt=""><span>dogi-dogi@gmail.com</span>
+                    </div>
+                    <div class="social clearfix"><img src="img/contact2.png" alt=""><span>554-667-890</span></div>
+                    <div class="social clearfix"><img src="img/contact3.png" alt=""><span>dogi-dogi</span></div>
+                </div>
+                <div id="map"></div>
+                <div class="wrapper">
+                    <div id="errorElement"></div>
+                    <form id="myform" onsubmit="return validate();">
+                        <input type="text" placeholder="Twoje imię" id="name" required>
+                        <input type="text" placeholder="Email" id="email">
+                        <textarea id="message" placeholder="Twoja wiadomość"></textarea>
+                        <button>Wyślij wiadomość</button>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <footer>&copy;Klaudia Klebba</footer>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwRVp7ctKeqoCl33UZAFriVWpHQtFP-yA&callback=initMap">
+    </script>
+</body>
+
+</html>
