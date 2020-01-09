@@ -1,0 +1,1214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* HEADER */
+header {
+
+    height: 45vw;
+    max-width: 1600px;
+    margin: 0 auto;
+
+}
+
+header>* {
+    position: relative;
+}
+
+.background {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/cocker.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+
+
+}
+
+nav ul {
+    list-style: none;
+    margin-left: 20vw;
+    font-size: 0;
+
+}
+
+nav a {
+    display: inline-block;
+    float: left;
+    width: 16%;
+    margin-top: 3%;
+    font-size: 14px;
+    font-family: 'Ibarra Real Nova', serif;
+    margin-right: 20px;
+    padding: 7px;
+    border: 2px solid black;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    transition: 0.5s;
+
+}
+
+li a:hover {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+.buttons a {
+
+    display: inline-block;
+    font-size: 15px;
+    font-family: 'Inria Serif', serif;
+    width: 15vw;
+    padding: 5px 5px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+
+
+}
+
+
+
+.button1,
+.button2 {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+
+}
+
+.button1 {
+    position: absolute;
+    bottom: 35%;
+    right: 12%;
+
+
+}
+
+.button2 {
+    position: absolute;
+    bottom: 35%;
+    left: 55%;
+
+}
+
+h1 {
+    position: absolute;
+    top: 20%;
+    right: 6%;
+    color: white;
+    font-size: 25px;
+    font-family: 'Inria Serif', serif;
+    text-transform: uppercase;
+}
+
+.content {
+    position: absolute;
+    top: 30%;
+    right: 14%;
+    color: white;
+    width: 30vw;
+    font-size: 18px;
+    font-family: 'Ibarra Real Nova', serif;
+
+}
+
+
+
+@media(min-width: 360px) {
+    header {
+        height: 160vw;
+    }
+
+    nav a {
+        width: 21%;
+        margin-top: 5%;
+        font-size: 11px;
+        margin-right: 5px;
+        padding: 8px;
+
+    }
+
+    .buttons a {
+        font-size: 10px;
+        width: 18vw;
+    }
+
+    .button1 {
+        bottom: 20%;
+        right: 12%;
+
+
+    }
+
+    .button2 {
+        bottom: 20%;
+        left: 45%;
+    }
+
+
+    h1 {
+
+        top: 15%;
+        left: 18%;
+        font-size: 15px;
+    }
+
+    .content {
+        top: 25%;
+        font-size: 13px;
+
+    }
+
+}
+
+@media(min-width:560px) {
+    header {
+        height: 140vw;
+    }
+
+    nav a {
+        width: 24;
+        font-size: 15px;
+
+    }
+
+    .buttons a {
+        font-size: 13px;
+        width: 20vw;
+    }
+
+    .button1 {
+        bottom: 30%;
+        right: 9%;
+
+
+    }
+
+    .button2 {
+        bottom: 30%;
+        left: 45%;
+    }
+
+
+    h1 {
+
+        top: 18%;
+        left: 24%;
+        font-size: 18px;
+    }
+
+    .content {
+        top: 35%;
+        right: 10%;
+        font-size: 15px;
+
+    }
+}
+
+@media(min-width: 650px) {
+    header {
+        height: 120vw;
+    }
+
+    nav a {
+        font-size: 17px;
+    }
+
+    .buttons a {
+        font-size: 15px;
+        width: 20vw;
+    }
+
+
+    h1 {
+
+        top: 18%;
+        left: 24%;
+        font-size: 25px;
+    }
+
+    .content {
+        top: 30%;
+        font-size: 16px;
+
+    }
+}
+
+@media(min-width: 740px) {
+    .buttons a {
+        font-size: 14px;
+        width: 25vw;
+    }
+
+    .button1 {
+        bottom: 40%;
+        right: 3%;
+
+
+    }
+
+    .button2 {
+        bottom: 40%;
+        left: 45%;
+    }
+}
+
+@media(min-width: 1024px) {
+    header {
+        height: 70vw;
+    }
+
+    nav a {
+        width: 21%;
+        font-size: 18px;
+        margin-right: 15px;
+
+    }
+
+    .buttons a {
+        font-size: 16px;
+        width: 18vw;
+    }
+
+    .button1 {
+        bottom: 30%;
+        right: 7%;
+    }
+
+    .button2 {
+        bottom: 30%;
+        left: 51%;
+    }
+
+
+    h1 {
+        top: 28%;
+        left: 60%;
+        font-size: 25px;
+    }
+
+    .content {
+        top: 40%;
+        font-size: 17px;
+
+    }
+}
+
+@media(min-width: 1250px) {
+    header {
+        height: 60vw;
+    }
+
+    h1 {
+        top: 25%;
+        left: 55%;
+        font-size: 25px;
+    }
+
+    .content {
+        top: 35%;
+        font-size: 18px;
+
+    }
+
+    .buttons a:hover {
+        color: white;
+
+    }
+}
+
+@media(min-width: 1500px) {
+    header {
+        height: 50vw;
+    }
+
+    nav a {
+        width: 21%;
+        font-size: 22px;
+        margin-right: 20px;
+
+    }
+
+    .buttons a {
+        font-size: 20px;
+        width: 17vw;
+    }
+
+    .button1 {
+        bottom: 30%;
+        right: 7%;
+    }
+
+    .button2 {
+        bottom: 30%;
+        left: 55%;
+    }
+
+
+    h1 {
+        top: 25%;
+        left: 58%;
+        font-size: 30px;
+    }
+
+    .content {
+        top: 35%;
+        font-size: 19px;
+
+    }
+}
+
+@media(min-width: 1650px) {
+    header {
+        height: 45vw;
+    }
+
+
+    .buttons a {
+        font-size: 20px;
+        width: 14vw;
+    }
+
+    .button1 {
+        bottom: 30%;
+        right: 10%;
+    }
+
+    .button2 {
+        bottom: 30%;
+        left: 53%;
+    }
+
+
+    h1 {
+        top: 25%;
+        left: 54%;
+        font-size: 32px;
+    }
+
+    .content {
+        top: 35%;
+        font-size: 20px;
+
+    }
+}
+
+/* Przyciski scroll */
+
+#btnphone:active {
+    background-color: #008B8B
+}
+
+#btnscroll {
+    position: fixed;
+    right: 2vw;
+    bottom: 2vw;
+    width: 5vw;
+    height: 5vw;
+    z-index: 1;
+    border-radius: 50%;
+    border: none;
+    background-color: #5F9EA0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    outline: none;
+    display: none;
+}
+
+#btnscroll:active {
+    background-color: #008B8B
+}
+
+@media(min-width: 360px) {
+    #btnscroll {
+
+        width: 7vw;
+        height: 7vw;
+    }
+
+}
+
+@media(min-width: 1024px) {
+    #btnscroll {
+        width: 4vw;
+        height: 4vw;
+    }
+}
+
+@media(min-width: 1600px) {
+    #btnscroll {
+        width: 3vw;
+        height: 3vw;
+        right: 9vw;
+        bottom: 6vw;
+    }
+
+}
+
+/* Sekcja ABOUT */
+
+#section1 {
+    max-width: 1600px;
+    margin: 0 auto;
+
+}
+
+h2 {
+    margin-top: 100px;
+    font-size: 24px;
+    font-family: 'Inria Serif', serif;
+    border: 2px solid black;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgb(110, 139, 125);
+
+}
+
+.text {
+    margin: 40px 100px;
+    font-size: 14px;
+    font-family: 'Ibarra Real Nova', serif;
+}
+
+
+@media (min-width: 768px) {
+    h2 {
+        font-size: 35px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    h2 {
+        font-size: 50px;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+
+
+}
+
+
+
+/* Sekcja GALLERY */
+
+.gallery {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+h3 {
+    margin-top: 100px;
+    font-size: 24px;
+    font-family: 'Inria Serif', serif;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    text-align: center;
+    border: 2px solid black;
+    background-color: rgb(110, 139, 125);
+
+}
+
+.item {
+
+    width: 100%;
+    margin: 5px 0;
+    max-width: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+
+
+
+.item:nth-of-type(1) {
+    background-image: url(img/zdj0.jpg);
+
+}
+
+.item:nth-of-type(2) {
+    background-image: url(img/zdj2.jpg);
+}
+
+.item:nth-of-type(3) {
+    background-image: url(img/zdj7.jpg);
+}
+
+.item:nth-of-type(4) {
+    background-image: url(img/zdj4.jpg);
+}
+
+.item:nth-of-type(5) {
+    background-image: url(img/zdj5.jpg);
+}
+
+.item:nth-of-type(6) {
+    background-image: url(img/zdj6.jpg);
+}
+
+#more .item:nth-of-type(1) {
+    background-image: url(img/zdj8.jpg);
+
+}
+
+#more .item:nth-of-type(2) {
+    background-image: url(img/zdj9.jpg);
+}
+
+#more .item:nth-of-type(3) {
+    background-image: url(img/zdj10.jpg);
+}
+
+#more {
+    display: none;
+
+}
+
+
+
+.item p {
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 4px black;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+    padding: 5px 0;
+    line-height: 42vh;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+
+
+
+.see {
+
+    font-size: 20px;
+    border: 2px solid black;
+    width: 30vw;
+    margin: 5% 33% 13%;
+    border-radius: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-family: 'Ibarra Real Nova', serif;
+
+}
+
+
+
+@media (min-width: 300px) {
+    .item {
+        max-width: 600px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    h3 {
+        font-size: 35px;
+    }
+
+    .item {
+        float: left;
+        max-width: 320px;
+        margin: 20px;
+    }
+
+    .see {
+
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    h3 {
+        font-size: 50px;
+    }
+
+    .item {
+        max-width: 400px;
+        margin: 48px;
+    }
+
+    .see {
+
+        font-size: 33px;
+    }
+
+    .item:hover {
+        background-size: 150%;
+    }
+
+    .item:hover p {
+        opacity: 1;
+    }
+
+    .see:hover {
+        background-color: grey;
+
+    }
+
+    .see:hover a {
+        color: white;
+    }
+}
+
+@media (min-width: 1600px) {
+
+    .item {
+        max-width: 400px;
+        margin: 60px;
+    }
+
+    .see {
+
+        font-size: 40px;
+    }
+
+}
+
+/* Sekcja OFERTA */
+.offerts {
+    max-width: 1600px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(img/forest.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+}
+
+.offer h4 {
+    font-size: 40px;
+    font-family: 'Inria Serif', serif;
+    text-transform: uppercase;
+    margin: 3vw 35vw;
+
+
+}
+
+.offer p {
+    margin: 8vw 15vw;
+    font-size: 25px;
+    font-family: 'Ibarra Real Nova', serif;
+    text-transform: uppercase;
+    color: white;
+}
+
+select {
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+    background-color: #C0C0C0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0 0 0 .5em;
+    color: black;
+    font-size: 1em;
+    font-family: 'Ibarra Real Nova', serif;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+}
+
+.select1,
+.select2 {
+    width: 20em;
+    height: 3em;
+    background-color: lightgrey;
+    overflow: hidden;
+    line-height: 3;
+    border-radius: 0.25em;
+
+
+}
+
+.select1 {
+    margin: 10vw 13vw;
+
+
+}
+
+.select2 {
+    margin: 10vw 13vw;
+}
+
+.offer h5 {
+    margin: 10vw 13vw;
+    font-size: 30px;
+    font-family: 'Ibarra Real Nova', serif;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+#textvalue {
+    position: relative;
+    left: 34vw;
+    top: -1vw;
+    max-width: 24vw;
+    padding: 20px;
+
+}
+
+#price {
+    text-align: center;
+    font-size: 40px;
+}
+
+@media (min-width: 360px) {
+    .offer h4 {
+        font-size: 30px;
+
+
+    }
+
+    .offer p {
+        font-size: 18px;
+    }
+
+    select {
+        font-size: 0.8em;
+    }
+
+    .select1,
+    .select2 {
+        width: 18em;
+        height: 3em;
+    }
+
+    .offer h5 {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .offer h4 {
+        font-size: 40px;
+    }
+
+    .offer p {
+        font-size: 25px;
+    }
+
+    select {
+        font-size: 0.8em;
+    }
+
+
+    .offer h5 {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .offerts {
+        position: relative;
+        top: 0;
+        bottom: 0;
+    }
+
+    .offer h4 {
+        font-size: 40px;
+        margin: 3vw 40vw;
+    }
+
+    .offer p {
+        font-size: 23px;
+    }
+
+    select {
+        font-size: 0.8em;
+    }
+
+    .select1,
+    .select2 {
+        position: relative;
+        display: block;
+        width: 18em;
+        height: 3em;
+    }
+
+    .select1 {
+        position: absolute;
+        top: 3vw;
+        left: 45vw;
+    }
+
+    .select2 {
+        position: absolute;
+        top: 13vw;
+        left: 45vw;
+    }
+
+    .offer h5 {
+        margin: 5vw 35vw;
+    }
+}
+
+@media (min-width: 1600px) {
+    .offerts {
+        margin: 0 auto;
+    }
+
+    .offer h4 {
+        font-size: 45px;
+        margin: 3vw 35vw;
+    }
+
+    .offer p {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    select {
+        font-size: 1em;
+    }
+
+
+    .select1 {
+        top: 6vw;
+        left: 40vw;
+    }
+
+    .select2 {
+        top: 24vw;
+        left: 40vw;
+    }
+
+    .offer h5 {
+        margin: 2vw 33vw;
+    }
+}
+
+/* Sekcja OPINIE */
+
+.opinions {
+    max-width: 1600px;
+    margin: 50px;
+    margin-top: 100px;
+    padding: 5% 2%;
+    text-align: center;
+
+}
+
+
+.opinions h6 {
+    font-size: 40px;
+    font-family: 'Inria Serif', serif;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.opinions p {
+    font-size: 12px;
+    font-family: 'Ibarra Real Nova', serif;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.opinion img {
+    width: 100%;
+    margin: 5px 0;
+    max-width: 200px;
+    border-radius: 300px;
+
+}
+
+@media (min-width: 360px) {
+    .opinions h6 {
+        font-size: 28px;
+    }
+
+
+    .opinions p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) {
+    .opinions h6 {
+        font-size: 36px;
+    }
+
+    .opinions p {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .opinions {
+        margin: 0 auto;
+        margin-top: 50px;
+        padding: 5% 2%;
+        text-align: center;
+    }
+
+    .opinion {
+        float: left;
+        width: 33%;
+        padding: 20px;
+    }
+
+    .opinion h6 {
+        font-size: 36px;
+    }
+
+
+    .opinions p {
+        font-size: 16px;
+        line-height: 120%;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 1600px) {
+
+    .opinion {
+        padding: 20px 40px;
+    }
+
+    .opinion h6 {
+        font-size: 56px;
+    }
+
+
+    .opinions p {
+        font-size: 16px;
+        line-height: 140%;
+        padding: 10px;
+    }
+}
+
+/* Sekcja KONTAKT */
+.contact {
+
+    background-color: rgb(110, 139, 125);
+    padding: 10px 20px;
+}
+
+h7 {
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'Inria Serif', serif;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.wrapper {
+    top: 0;
+    left: 30%;
+    padding-top: 20px;
+    max-width: 60vw;
+    margin: 0 auto;
+}
+
+
+.contact input,
+.contact button,
+.contact textarea {
+    width: 80%;
+    margin-bottom: 25px;
+    font-size: 12px;
+    font-family: 'Inria Serif', serif;
+    padding: 5px;
+}
+
+.contact input {
+
+    height: 36px;
+
+}
+
+.contact textarea {
+    resize: none;
+    height: 120px;
+}
+
+
+
+.contact button {
+    line-height: 40px;
+    font-size: 14px;
+    background-color: rgb(110, 139, 125);
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+#errorElement {
+    margin-bottom: 20px;
+    background: #fe8b8e;
+    padding: 0px;
+    width: 80%;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+}
+
+.contact .socials {
+    padding-top: 30px;
+    font-size: 0;
+}
+
+.contact .social {
+    padding: 10px 0;
+    color: white;
+
+}
+
+.contact .social img {
+    float: left;
+}
+
+.contact .social span {
+    line-height: 72px;
+    padding-left: 20px;
+    float: left;
+    font-size: 20px;
+}
+
+#map {
+    height: 300px;
+    width: 40%;
+    border: 2px solid black;
+    border-radius: 2%;
+}
+
+@media (min-width: 350px) {
+    #map {
+        height: 200px;
+        width: 90%;
+    }
+}
+
+@media (min-width: 533px) {
+    .contact .social {
+        display: inline-block;
+        width: 49%
+    }
+
+    #map {
+        height: 200px;
+        width: 90%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contact {
+        position: relative;
+        height: 54vw;
+
+    }
+
+    .wrapper {
+        position: absolute;
+        float: left;
+        top: 3vw;
+        left: 60vw;
+    }
+
+    .contact form,
+    .contact .socials {
+        max-width: 60vw;
+        padding: 0 20px;
+        max-height: 30vw;
+    }
+
+    .contact .social {
+        display: block;
+        width: 49%;
+        margin: 0 auto;
+    }
+
+
+
+    .contact input,
+    .contact button,
+    .contact textarea {
+        margin-bottom: 2vw;
+
+    }
+
+    .contact input {
+        height: 3vw;
+        font-size: 20px;
+
+    }
+
+    .contact textarea {
+        height: 10vw;
+        font-size: 20px;
+        resize: none;
+    }
+
+    .contact button {
+        font-size: 20px;
+        line-height: 50px;
+        transition: 0.3s;
+        cursor: pointer;
+
+    }
+
+    #errorElement {
+        max-width: 32vw;
+        font-size: 18px;
+    }
+
+    .contact button:hover {
+        color: black;
+        background-color: white;
+    }
+
+    #map {
+        margin: 2vw 10vw;
+        height: 20vw;
+        width: 40%;
+    }
+}
+
+@media (min-width: 1300px) {
+    .contact {
+        position: relative;
+        height: 49vw;
+
+    }
+}
+
+
+footer {
+    background-color: #5c8fa5;
+    color: white;
+    font-family: 'Saira', sans-serif;
+    text-align: center;
+    padding: 20px;
+    font-size: 15px;
+}
